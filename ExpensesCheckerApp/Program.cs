@@ -1,4 +1,5 @@
 using ExpensesCheckerApp.Components;
+using Radzen;
 
 namespace ExpensesCheckerApp
 {
@@ -11,7 +12,7 @@ namespace ExpensesCheckerApp
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
-
+            builder.Services.AddRadzenComponents();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
